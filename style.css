@@ -1,0 +1,217 @@
+/* Общие стили */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 250px;
+}
+
+/* Раздел "Our story" */
+.story {
+    padding: 50px 0;
+}
+
+.story_left {
+    max-width: 398px;
+    margin-right: 50px;
+}
+
+.story_title_2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #48555B;
+    padding: 30px 0;
+}
+
+.story_title_2:after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.story_inner {
+    display: flex;
+    justify-content: center;
+}
+
+.story_title_3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #48555B;
+}
+
+.accent-color {
+    color: #00A4E5;
+}
+
+.story_text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #48555B;
+}
+
+.story_right {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.story_item {
+    padding: 15px;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 140px;
+    height: 224px;
+    margin-right: 20px;
+
+}
+
+.story_item:nth-child(1) {
+    background-image: url(image/story1.png);
+}
+
+.story_item:nth-child(2) {
+    background-image: url(image/story2.png);
+}
+
+.story_item:nth-child(3) {
+    background-image: url(image/story3.png);
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+    padding: 0 50px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+    padding: 0 15px;
+    }
+    .story_inner {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .story_right {
+        flex-wrap: wrap;
+    }
+    .story_item {
+        margin-bottom: 20px;
+    }
+    .story_item:nth-child(3) {
+    margin-bottom: 0px;
+}
+}
+
+/* Раздел "Our capabilites" */
+
+.capabilites {
+    margin-top: 100px;
+}
+
+.capabilites_top {
+    display: flex;
+    justify-content: center;
+}
+
+.capabilites_title_2 {
+    text-transform: uppercase;
+    text-align: left;
+    text-wrap: nowrap;
+    font-weight: bold;
+    font-size: 18px;
+    color: #48555B;
+    margin: 0;
+    padding: 0;
+}
+
+.capabilites_title_2:after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    display: block;
+    margin: 10px 0;
+}
+
+.capabilites_text {
+    display: block;
+    font-weight: 400;
+    font-size: 11px;
+    color: #48555B;
+    text-align: left;
+    width: 405px;
+    margin: 0 35px 0 150px;
+    padding: 5px;
+}
+.capabilites_button {
+    width: 150px;
+    height: 40px;
+    margin: 0;
+    background-color: #00A4E5;
+    border: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.capabilites_button:hover {
+    background-color: #00a4e5de;
+}
+
+.capabilites_bottom {
+     display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.capabilites_item {
+    color:#48555B;
+    width: 290px;
+    height: 330px;
+    border: 2px solid #E6E6E6;
+    margin-right: 20px;
+    padding: 38px 23px;
+    
+}
+
+.capabilites_title_3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.capabilites_text_2 {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.capabilites_item:nth-child(3) {
+    margin-right: 0px;
+}
