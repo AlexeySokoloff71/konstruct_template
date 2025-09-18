@@ -358,7 +358,7 @@ li :focus {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 498px;
+    height: 497px;
 }
 
 .get_title {
@@ -525,5 +525,6 @@ li :focus {
     font-weight: 40;
     color: #FFFFFF;
 }
+
 
 
